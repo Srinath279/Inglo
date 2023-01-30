@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   api:
-    build: .
+    build: ./backend
     container_name: fast-api12
     ports:
       - 5000:15400

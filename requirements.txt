@@ -1,7 +1,7 @@
 fastapi
 uvicorn
 phonenumbers
-
+gunicorn==20.1.0
 #for template
 jinja2
 
