@@ -1,12 +1,12 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from pydantic import EmailStr
 
 
 # properties required during user creation
 class InvestorUserCreate(BaseModel):
-    email: EmailStr
-    phone_number: str
-    password: str
+    email: EmailStr = Field(..., example="sjdecode@gmail.com")
+    phone_number: str = Field(..., example="9812364802")
+    password: str  = Field(..., example="sjdecode")
 
 
 class ShowInvestorUser(BaseModel):
